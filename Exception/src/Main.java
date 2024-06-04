@@ -23,6 +23,19 @@ public class Main {
         }catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Array out of bounds");
         }
+        //MultiCatch
+         try {
+            int a=10;
+            int b=0;
+            int c=a/b;
+        }
+        catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("arary out of bounds");
+        }
+        catch (ArithmeticException e){
+            System.out.println("ArithmeticException");
+        }
+        System.out.println("Handled");
 
     }
 }
