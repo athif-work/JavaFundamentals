@@ -23,8 +23,14 @@ public class Main {
         }catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Array out of bounds");
         }
+
+
+        
         //MultiCatch
-         try {
+        
+        
+        
+        try {
             int a=10;
             int b=0;
             int c=a/b;
@@ -36,6 +42,31 @@ public class Main {
             System.out.println("ArithmeticException");
         }
         System.out.println("Handled");
+        
+        
+        //FINALLY BLOCK
+        
+        
+        try {
+            int a=Integer.parseInt("fsd");
+            System.out.println(a);
+
+        }
+        finally {
+            System.out.println("finally block is always executed");
+        }
+
+
+        //THROW IN JAVA
+        
+        try {
+            throw new ArithmeticException("SAmple");
+        }
+        catch (ArithmeticException e){
+            System.out.println("exception caught!!");
+        }
+
+        
 
     }
 }
